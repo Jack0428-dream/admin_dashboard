@@ -61,8 +61,66 @@ ul {
 }
 
 .heather {
+    margin: 0px;
     background-color: rgba(255,255,255,255);
     grid-column: 2 / 3;
+    display: grid;
+    grid-template-rows: 0.3fr 1fr;
+    grid-template-columns: 1fr 0.5fr ;
+}
+
+.magnify {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    left: 30px;
+    top: 8px;
+}
+
+input {
+    margin-left: 40px;
+    margin-top: 20px;
+    grid-column: 1 / 2 ;
+    grid-row: 1 / 2 ;
+    width: 60%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(226,232,240,255);
+    font: inherit;  
+} 
+
+input:focus {
+    outline: none;
+}
+
+.profile1 {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+}
+
+.profile2 {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+
+.buttons {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    display: flex;
+    gap: 10px;
+    justify-content: start;
+
+}
+
+.button1,
+.button2,
+.button3 {
+    width: 100px;
+    height: 30px;
+    background-color: rgba(25,146,212,255);
+    border-radius: 7px;
+    align-items: center;
 }
 
 .main-content {
