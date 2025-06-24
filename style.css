@@ -1,4 +1,4 @@
-* {
+html, body {
     margin: 0px;
 }
 
@@ -27,10 +27,17 @@
 }
 
 .projects {
-    background-color: white;
+    background-color: rgb(154, 204, 214);
     grid-column: 1 / 2;
     grid-row: 2 / 4;
     gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.project {
+    background-color: azure;
 }
 
 .side-content {
