@@ -1,5 +1,25 @@
+@font-face {
+    font-family: "Sansprobasic";
+    src: 
+        url("font/sourcesanspro-regular-webfont.woff2") format("woff2"),
+        url("font/sourcesanspro-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Sansprosemibold";
+    src: 
+        url("sourcesanspro-semibold-webfont.woff2") format("woff2"),
+        url("sourcesanspro-semibold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 html, body {
     margin: 0px;
+    font-family: "Sansprobasic", serif;
 }
 
 .container {
@@ -7,19 +27,46 @@ html, body {
     grid-template-columns: 1fr 4fr;
 }
 
+.dashboard {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 35px;
+}
+
+.home {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    top: 15px;
+    right: 1px
+}
+
+ul {
+    list-style-type: none;
+}
+
+.menu1, .menu2 {
+    font-size: 25px;
+}
+
+.menu1 > li, .menu2 > li {
+    margin-bottom: 3px;
+    margin-left: 35px;
+}
+
 .sidebar {
-    background-color: red;
+    background-color: rgba(25,146,212,255);
     grid-column: 1 / 2;
     grid-row: 1 / span 5;
 }
 
 .heather {
-    background-color: orange;
+    background-color: rgba(255,255,255,255);
     grid-column: 2 / 3;
 }
 
 .main-content {
-    background-color: rgb(154, 204, 214);
+    background-color: rgba(226,232,240,255);
     grid-column: 2 / 3;
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -27,7 +74,7 @@ html, body {
 }
 
 .projects {
-    background-color: rgb(154, 204, 214);
+    background-color: rgba(226,232,240,255);
     grid-column: 1 / 2;
     grid-row: 2 / 4;
     gap: 15px;
@@ -37,7 +84,7 @@ html, body {
 }
 
 .project {
-    background-color: azure;
+    background-color: rgba(255,255,255,255);
 }
 
 .side-content {
