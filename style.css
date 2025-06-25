@@ -10,8 +10,8 @@
 @font-face {
     font-family: "Sansprosemibold";
     src: 
-        url("sourcesanspro-semibold-webfont.woff2") format("woff2"),
-        url("sourcesanspro-semibold-webfont.woff") format("woff");
+        url("font/sourcesanspro-semibold-webfont.woff2") format("woff2"),
+        url("font/sourcesanspro-semibold-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
@@ -97,11 +97,33 @@ input:focus {
 .profile1 {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
+    font-size: 20px;
+    font-family: "Sansprosemibold", serif;
+    font-weight: 900;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+    margin-right: 70px;
 }
 
 .profile2 {
     grid-row: 2 / 3;
     grid-column: 1 / 2;
+    margin-left: 110px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-family: "Sansprosemibold", serif;
+    font-size: 27px;
+    font-weight: 900;
+}
+
+.profile2 > p {
+    margin:0;
+    padding: 0;
+}
+
+.greet {
+    font-size: 15px;
 }
 
 .buttons {
@@ -109,18 +131,23 @@ input:focus {
     grid-column: 2 / 3;
     display: flex;
     gap: 10px;
-    justify-content: start;
-
+    justify-content: end;
+    margin-right: 70px;
+    align-items: flex-end;
+    margin-bottom: 30px;
 }
 
 .button1,
 .button2,
 .button3 {
-    width: 100px;
-    height: 30px;
+    width: 90px;
+    height: 40px;
     background-color: rgba(25,146,212,255);
-    border-radius: 7px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    color: azure;
 }
 
 .main-content {
@@ -137,23 +164,36 @@ input:focus {
     grid-row: 2 / 4;
     gap: 15px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 0.5fr);
+    grid-template-rows: repeat(3, 0.5fr);
+    margin-left: 15px;
+    margin-bottom: 40px;
 }
 
 .project {
     background-color: rgba(255,255,255,255);
+    border-radius: 5px;
 }
 
 .side-content {
     background-color: green;
     grid-column: 2 / 3;
-    grid-row: 2 / 3
-
+    grid-row: 2 / 3;
+    border-radius: 5px;
+    margin-right: 15px;
+    margin-bottom: 30px;
 }
 
 .trend-content {
     background-color: blue;
     grid-column: 2 / 3;
-    grid-row: 3 / 4
+    grid-row: 3 / 4;
+    border-radius: 5px;
+    margin-right: 15px;
+    margin-bottom: 40px;
+}
+
+.side-content > p,
+.trend-content > p {
+    background-color: rgba(226,232,240,255);;
 }
