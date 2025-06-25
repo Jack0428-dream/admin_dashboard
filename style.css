@@ -350,12 +350,12 @@ input:focus {
 
 .trend {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     margin-bottom: 15px;
 }
 
 .trendcontent {
-    margin-left: 5px;
+    width: 120px;
 }
 
 .trend > .trendcontent > p {
@@ -365,6 +365,9 @@ input:focus {
 }
 
 .trend > .imgbox {
+    position: relative;
     border: 2px solid black;
+    top: 18px;
+    left: 15px;
 }
 
