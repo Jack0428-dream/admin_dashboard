@@ -248,6 +248,9 @@ input:focus {
     background-color: rgba(255,255,255,255);
     border-radius: 10px;
     border-left: 10px solid rgba(240,180,41,255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .content > p {
@@ -260,22 +263,19 @@ input:focus {
     margin-left: 20px;
 }
 
-.contentmenu1,
-.contentmenu2,
-.contentmenu3,
-.contentmenu4,
-.contentmenu5,
-.contentmenu6 {
+.contentmenu {
     display: flex;
-    justify-self: flex-end;
+    align-self: flex-end;
     width: 100px;
     height: 30px;
+    margin-bottom: 10px;
+    margin-right: 5px;
 }
 
-.contentmenu1 {
-    position: relative;
-    top: 30px;
+.contentmenu > svg:hover {
+    fill: rgba(25,146,212,255);
 }
+
 .side-content {
     background-color: white;
     grid-column: 2 / 3;
