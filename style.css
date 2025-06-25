@@ -91,7 +91,7 @@ ul {
     background-color: rgba(255,255,255,255);
     grid-column: 2 / 3;
     display: grid;
-    grid-template-rows: 0.3fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 0.5fr ;
 }
 
@@ -108,7 +108,7 @@ input {
     margin-top: 20px;
     grid-column: 1 / 2 ;
     grid-row: 1 / 2 ;
-    width: 60%;
+    width: 70%;
     height: 30px;
     border-radius: 5px;
     border: none;
@@ -120,7 +120,43 @@ input:focus {
     outline: none;
 }
 
+.bell {
+    width: 35px;
+    height: 35px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.bell:hover {   
+    fill: rgba(25,146,212,255);
+    border-radius: 100%;
+}
+
+.imgbox {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 100%;
+    right: 5px;
+}
+
+.bear {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    right: 40px;
+    top: -53px;
+}
+
+.imgbox + div {
+    position: relative;
+    top: 10px;
+}
+
 .profile1 {
+    position: relative;
     grid-row: 1 / 2;
     grid-column: 2 / 3;
     font-size: 20px;
@@ -136,20 +172,28 @@ input:focus {
     grid-row: 2 / 3;
     grid-column: 1 / 2;
     margin-left: 110px;
-    margin-top: 50px;
     margin-bottom: 20px;
     font-family: "Sansprosemibold", serif;
     font-size: 27px;
     font-weight: 900;
+    height: 45px;
 }
 
 .profile2 > p {
     margin:0;
     padding: 0;
+    position: relative;
+    bottom: 55px;
 }
 
 .greet {
     font-size: 15px;
+}
+
+.profile2 > .imgbox {
+    position: relative;
+    right: 60px;
+    top: 7px;
 }
 
 .buttons {
@@ -174,6 +218,10 @@ input:focus {
     justify-content: center;
     align-items: center;
     color: azure;
+}
+
+.buttons > li:hover {
+    background-color: darkblue;
 }
 
 .main-content {
