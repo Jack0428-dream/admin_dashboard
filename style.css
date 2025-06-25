@@ -255,7 +255,7 @@ input:focus {
 
 .project:hover {
     color: azure;
-    background-color: rgba(25,146,212,255);
+    background-color: lightblue;
 }
 
 .content > p {
@@ -349,14 +349,22 @@ input:focus {
 }
 
 .trend {
-    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
 }
 
-.trend > p {
+.trendcontent {
+    margin-left: 5px;
+}
+
+.trend > .trendcontent > p {
     margin-bottom: 0;
     font-family: "Sansprosemibold", serif;
     font-weight: bold;
 }
 
-
+.trend > .imgbox {
+    border: 2px solid black;
+}
 
