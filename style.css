@@ -173,10 +173,11 @@ input:focus {
 .project {
     background-color: rgba(255,255,255,255);
     border-radius: 5px;
+    border-left: 7px solid rgba(240,180,41,255);
 }
 
 .side-content {
-    background-color: green;
+    background-color: white;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     border-radius: 5px;
@@ -185,15 +186,69 @@ input:focus {
 }
 
 .trend-content {
-    background-color: blue;
+    background-color: white;
     grid-column: 2 / 3;
     grid-row: 3 / 4;
     border-radius: 5px;
     margin-right: 15px;
+    margin-top: 30px;
     margin-bottom: 40px;
+    padding: 15px;
 }
 
-.side-content > p,
-.trend-content > p {
-    background-color: rgba(226,232,240,255);;
+.name3 {
+    position: relative;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    top: -20px;
+}
+
+.name1,
+.name2,
+.name3 {
+    font-size: 30px;
+}
+
+.name1,
+.name2 {
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+.name1 {
+    margin-left: 15px;
+}
+
+.side-content > div {
+    font-size: 13px;
+}
+
+.announce1 > p, 
+.announce2 > p,
+.announce3 > p {
+    margin-bottom: 5px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.announce1,
+.announce2 {
+    border-bottom: 2px solid gray ;
+    padding-bottom: 10px;
+}
+
+.announce1, 
+.announce2,
+.announce3 {
+    margin: 15px;
+}
+
+.trend {
+    margin-left: 100px;
+}
+
+.trend > p {
+    margin-bottom: 0;
+    font-family: "Sansprosemibold", serif;
+    font-weight: bold;
 }
